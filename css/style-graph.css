@@ -1,47 +1,89 @@
+ #Answer1{
+    display: block;
+    border: none;
+    /*margin:auto;*/
+    left: 50%;
+}
+
+#Answer2{
+    display: block;
+    border: none;
+    /*margin:auto;*/
+    left: 50%;
+}
+
+#Answer3{
+    border: none;
+}
+
+#Answer4{
+    border: none;
+}
+
+#Answer5{
+    border: none;
+}
+
+
+
+
  /* Style the tab */
-div.tab {
+/*div.tab {
     overflow: hidden;
-    /*border: 1px solid #ccc;*/
+    border: 1px solid #ccc;
     border: none;
     background-color: #f1f1f1;
 }
-
+*/
 /* Style the links inside the tab */
-div.tab a {
+/*div.tab a {
     float: left;
-/*    display: block;
-*/    color: black;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+    border: none;
 }
-
+*/
 /* Change background color of links on hover */
-div.tab a:hover {
+/*div.tab a:hover {
     background-color: #ddd;
-}
+}*/
+
+/*
+#Answer1{
+    border:none;
+}*/
 
 /* Create an active/current tablink class */
-div.tab a:focus, .active {
+/*div.tab a:focus, .active {
     background-color: #ccc;
-}
+}*/
 
 /* Style the tab content */
-.tabcontent {
+/*.tabcontent {
     display: none;
     padding: 6px 12px;
-    border-top: none;
+    border: none;
+}*/
+
+/*.tabcontent{
+    border: none
 }
+*/
 
 
-.tabcontent {
+
+
+/*.tabcontent {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
+/*    border: none;
 }
-
-@-webkit-keyframes fadeEffect {
+*/*/
+/*@-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -49,4 +91,4 @@ div.tab a:focus, .active {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
-}
+}*/
