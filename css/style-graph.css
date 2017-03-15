@@ -1,8 +1,5 @@
  #Answer1{
-    display: block;
     border: none;
-    /*margin:auto;*/
-    left: 50%;
 }
 
 #Answer2{
@@ -24,8 +21,13 @@
     border: none;
 }
 
+#graph{
+    display: block;
+    margin: 0 auto;
+}
 
 
+/*
 
  /* Style the tab */
 /*div.tab {
@@ -57,7 +59,7 @@
     border:none;
 }*/
 
-/* Create an active/current tablink class */
+ Create an active/current tablink class 
 /*div.tab a:focus, .active {
     background-color: #ccc;
 }*/
@@ -82,7 +84,7 @@
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 /*    border: none;
 }
-*/*/
+*/
 /*@-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
