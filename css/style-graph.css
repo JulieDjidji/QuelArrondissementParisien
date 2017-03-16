@@ -1,8 +1,28 @@
+#graph{
+    display: block;
+    margin: auto;
+}
+
+#iframe1{
+    display: block;
+    margin: 0 auto;
+}
+
+#iframe2{
+    display: block;
+    margin: 0 auto;
+}
+
+
  #Answer1{
+    display: block;
+    margin: 0 auto;
     border: none;
 }
 
 #Answer2{
+    display: block;
+    margin: 0 auto;
     border: none;
 }
 
@@ -18,10 +38,7 @@
     border: none;
 }
 
-#graph{
-    /*display: block;*/
-    margin: 0 auto;
-}
+
 
 
 /*
@@ -51,10 +68,6 @@
     background-color: #ddd;
 }*/
 
-/*
-#Answer1{
-    border:none;
-}*/
 
  Create an active/current tablink class 
 /*div.tab a:focus, .active {
@@ -76,12 +89,15 @@
 
 
 
-/*.tabcontent {
+.tabcontent {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
     -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-/*    border: none;
+    animation: fadeEffect 1s;  
+    border: none;
 }
-*/
+
 /*@-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -90,4 +106,4 @@
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
-}*/
+}
