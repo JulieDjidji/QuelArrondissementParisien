@@ -1461,20 +1461,17 @@ svg { height: 100%; width: 100%; }
 	margin-right: 20px;
 }
 
-#sidebar .item a#global:hover, #sidebar .item a.global, input.global{
-	background-color: #FFBC00;
-}
-#sidebar .item a#modalite1:hover, #sidebar .item a.modalite1, input.modalite1{
+#sidebar .modalite1:link, #sidebar .modalite1:hover{
 	background-color: #FF0025;
 }
-#sidebar .item a#modalite2:hover, #sidebar .item a.modalite2, input.modalite2{
-	background-color: #FFA000 /*FFBC00*/;
+ #sidebar .modalite2:link, #sidebar .modalite2:hover{
+	background-color: #FFA000;
 }
-#sidebar .item a#modalite3:hover, #sidebar .item a.modalite3, input.modalite3{
-	background-color: #00A0D0 /*004FDE*/;
+ #sidebar .modalite3:link, #sidebar .modalite3:hover{
+	background-color: #00A0D0;
 }
-#sidebar .item a#modalite4:hover, #sidebar .item a.modalite4, input.modalite4{
-	background-color: #FF00A0 /*FF0065*/;
+ #sidebar .modalite4:link, #sidebar .modalite4:hover{
+	background-color: #FF00A0;
 }
 
 

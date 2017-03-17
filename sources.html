@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 	Interphase by TEMPLATED
 	templated.co @templatedco
@@ -117,14 +117,14 @@
   
 					<ul class="nav nav-pills align-center">
   
-						<li class="active"><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(1)">Régime alimentaire</a>
+						<li class="active"><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(1)" id="boutonQuestion1">Régime alimentaire</a>
 </li>
-						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(2)">Sport</a>
+						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(2)" id="boutonQuestion2">Sport</a>
 </li>
-						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(3)">Après-midis</a></li>
-						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(4)">Soirées</a>
+						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(3)" id="boutonQuestion3">Après-midis</a></li>
+						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(4)" id="boutonQuestion4">Soirées</a>
 </li>
-						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(5)">Accessoire</a></li>							</ul>
+						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(5)" id="boutonQuestion5">Accessoire</a></li>							</ul>
 					</div>
 
 			<!-- <div class="clearfix"></div> -->
@@ -134,24 +134,24 @@
 	<div id="sidebar">
 		<div id="sidebar1" class="pull-left">		
 			<div class="item">	   
-				<a class="pull-left img-rounded" id="modalite1" onclick="affichageCarteParQuestionModalite(1,1)"></a>
+				<a class="pull-left img-rounded modalite1" id="modalite11" onclick="affichageCarteParQuestionModalite(1,1)"></a>
 			    	<h5 class="sliding-title pull-right">T-rex</h5>
 			</div>		
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite2" onclick="affichageCarteParQuestionModalite(1,2)">
+			    	<a class="pull-left img-rounded modalite2" id="modalite12" onclick="affichageCarteParQuestionModalite(1,2)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right">Fish-addict<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite3" onclick="affichageCarteParQuestionModalite(1,3)">
+			    	<a class="pull-left img-rounded modalite3" id="modalite13" onclick="affichageCarteParQuestionModalite(1,3)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Fast-food<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite4" onclick="affichageCarteParQuestionModalite(1,4)">
+			    	<a class="pull-left img-rounded modalite4" id="modalite14" onclick="affichageCarteParQuestionModalite(1,4)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Du sucre<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
@@ -164,22 +164,22 @@
 
 		<div id="sidebar2" class="pull-left">		
 			<div class="item">	   
-				<a class="pull-left img-rounded" id="modalite1" onclick="affichageCarteParQuestionModalite(2,1)">
+				<a class="pull-left img-rounded modalite1" id="modalite21" onclick="affichageCarteParQuestionModalite(2,1)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Schwarzy<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>		
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite2" onclick="affichageCarteParQuestionModalite(2,2)">
+			    	<a class="pull-left img-rounded modalite2" id="modalite22" onclick="affichageCarteParQuestionModalite(2,2)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Foot<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite3" onclick="affichageCarteParQuestionModalite(2,3)">
+			    	<a class="pull-left img-rounded modalite3" id="modalite23" onclick="affichageCarteParQuestionModalite(2,3)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Tennis<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite4" onclick="affichageCarteParQuestionModalite(2,4)">
+			    	<a class="pull-left img-rounded modalite4" id="modalite24" onclick="affichageCarteParQuestionModalite(2,4)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Pétanque<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
@@ -193,25 +193,25 @@
 
 		<div id="sidebar3" class="pull-left">		
 			<div class="item">	   
-				<a class="pull-left img-rounded" id="modalite1" onclick="affichageCarteParQuestionModalite(3,1)">
+				<a class="pull-left img-rounded modalite1" id="modalite31" onclick="affichageCarteParQuestionModalite(3,1)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 			    	<h5 class="sliding-title-active pull-right" style="display: block;">Parcs</h5>
 			</div>		
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite2" onclick="affichageCarteParQuestionModalite(3,2)">
+			    	<a class="pull-left img-rounded modalite2" id="modalite32" onclick="affichageCarteParQuestionModalite(3,2)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Musées<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite3" onclick="affichageCarteParQuestionModalite(3,3)">
+			    	<a class="pull-left img-rounded modalite3" id="modalite33" onclick="affichageCarteParQuestionModalite(3,3)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Bibliothèques<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite4" onclick="affichageCarteParQuestionModalite(3,4)">
+			    	<a class="pull-left img-rounded modalite4" id="modalite34" onclick="affichageCarteParQuestionModalite(3,4)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Terrasses<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
@@ -225,25 +225,25 @@
 
 		<div id="sidebar4" class="pull-left">		
 			<div class="item">	   
-				<a class="pull-left img-rounded" id="modalite1" onclick="affichageCarteParQuestionModalite(4,1)">
+				<a class="pull-left img-rounded modalite1" id="modalite41" onclick="affichageCarteParQuestionModalite(4,1)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 		    		<h5 class="sliding-title-active pull-right" style="display: block;">Tranquille chez toi</h5>
 			</div>		
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite2" onclick="affichageCarteParQuestionModalite(4,2)">
+			    	<a class="pull-left img-rounded modalite2" id="modalite42" onclick="affichageCarteParQuestionModalite(4,2)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Bars<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite3" onclick="affichageCarteParQuestionModalite(4,3)">
+			    	<a class="pull-left img-rounded modalite3" id="modalite43" onclick="affichageCarteParQuestionModalite(4,3)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Théâtre<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite4" onclick="affichageCarteParQuestionModalite(4,4)">
+			    	<a class="pull-left img-rounded modalite4" id="modalite44" onclick="affichageCarteParQuestionModalite(4,4)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Restaurants<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
@@ -257,25 +257,25 @@
 
 		<div id="sidebar5" class="pull-left">		
 			<div class="item">	   
-				<a class="pull-left img-rounded" id="modalite1" onclick="affichageCarteParQuestionModalite(5,1)">
+				<a class="pull-left img-rounded modalite1" id="modalite51" onclick="affichageCarteParQuestionModalite(5,1)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 		    		<h5 class="sliding-title-active pull-right" style="display: block;">Ta poussette</h5>
 			</div>		
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite2" onclick="affichageCarteParQuestionModalite(5,2)">
+			    	<a class="pull-left img-rounded modalite2" id="modalite52" onclick="affichageCarteParQuestionModalite(5,2)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Ta bouteille<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite3" onclick="affichageCarteParQuestionModalite(5,3)">
+			    	<a class="pull-left img-rounded modalite3" id="modalite53" onclick="affichageCarteParQuestionModalite(5,3)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Tes médocs<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
 
 			<div class="item">
-			    	<a class="pull-left img-rounded" id="modalite4" onclick="affichageCarteParQuestionModalite(5,4)">
+			    	<a class="pull-left img-rounded modalite4" id="modalite54" onclick="affichageCarteParQuestionModalite(5,4)">
 					<i class="icon icon-glass icon-2x clearfix"></i></a>
 	    			<h5 class="sliding-title pull-right" >Etre sur ton 31<i class="icon icon-info-sign muted the-info"></i></h5>
 			</div>
@@ -529,13 +529,305 @@
 		document.querySelector('#sidebar4').style.display='none';
 		document.querySelector('#sidebar5').style.display='none';
 		document.querySelector('#sidebar1').style.display='block';
+		document.querySelector('#boutonQuestion1').style.background="#FF0010";
+		document.querySelector('#modalite11').style.background="#FF0025";
+
+
+document.querySelector('#Cartes').style.display='block';
+document.getElementById('A1').innerHTML = 'n°17';
+document.getElementById('A2').innerHTML = 'n°8';
+document.getElementById('A3').innerHTML = 'n°20';
+document.getElementById('A4').innerHTML = 'n°13';
+document.getElementById('A5').innerHTML = 'n°11';
+document.getElementById('A6').innerHTML = 'n°16';
+document.getElementById('A7').innerHTML = 'n°18';
+document.getElementById('A8').innerHTML = 'n°19';
+document.getElementById('A9').innerHTML = 'n°5';
+document.getElementById('A10').innerHTML = 'n°1';
+document.getElementById('A11').innerHTML = 'n°3';
+document.getElementById('A12').innerHTML = 'n°9';
+document.getElementById('A13').innerHTML = 'n°13';
+document.getElementById('A14').innerHTML = 'n°11';
+document.getElementById('A15').innerHTML = 'n°10';
+document.getElementById('A16').innerHTML = 'n°15';
+document.getElementById('A17').innerHTML = 'n°6';
+document.getElementById('A18').innerHTML = 'n°2';
+document.getElementById('A19').innerHTML = 'n°7';
+document.getElementById('A20').innerHTML = 'n°4';
+$('#C1').css('fill', 'FF00D0');
+$('#C2').css('fill', 'FF0010');
+$('#C3').css('fill', 'FF00F0');
+$('#C4').css('fill', 'FF0010');
+$('#C5').css('fill', 'FF0090');
+$('#C6').css('fill', 'FF00D0');
+$('#C7').css('fill', 'FF0090');
+$('#C8').css('fill', 'FF00FF');
+$('#C9').css('fill', 'FF00F0');
+$('#C10').css('fill', 'FF00B0');
+$('#C11').css('fill', 'FF0030');
+$('#C12').css('fill', 'FF0010');
+$('#C13').css('fill', 'FF00B0');
+$('#C14').css('fill', 'FF0040');
+$('#C15').css('fill', 'FF00A0');
+$('#C16').css('fill', 'FF0010');
+$('#C17').css('fill', 'FF0010');
+$('#C18').css('fill', 'FF0010');
+$('#C19').css('fill', 'FF0010');
+$('#C20').css('fill', 'FF0040');
+
 		var affichPrec=1;
+		var affichPrecMod=1;
+
 		function affichageCarteParQuestion(answer){
+			document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#000";
 			document.querySelector('#sidebar'+affichPrec).style.display='none';
 			document.querySelector('#sidebar'+answer).style.display='block';
+			document.querySelector('#boutonQuestion'+affichPrec).style.background="#000";
+			document.querySelector('#boutonQuestion'+answer).style.background="#FF0010";
 			affichPrec=answer;
+			document.querySelector('#modalite'+answer+'1').style.background="#FF0025";
+	
+			switch (answer) {
+case 1:
+document.querySelector('#Cartes').style.display='block';
+document.getElementById('A1').innerHTML = 'n°17';
+document.getElementById('A2').innerHTML = 'n°8';
+document.getElementById('A3').innerHTML = 'n°20';
+document.getElementById('A4').innerHTML = 'n°13';
+document.getElementById('A5').innerHTML = 'n°11';
+document.getElementById('A6').innerHTML = 'n°16';
+document.getElementById('A7').innerHTML = 'n°18';
+document.getElementById('A8').innerHTML = 'n°19';
+document.getElementById('A9').innerHTML = 'n°5';
+document.getElementById('A10').innerHTML = 'n°1';
+document.getElementById('A11').innerHTML = 'n°3';
+document.getElementById('A12').innerHTML = 'n°9';
+document.getElementById('A13').innerHTML = 'n°13';
+document.getElementById('A14').innerHTML = 'n°11';
+document.getElementById('A15').innerHTML = 'n°10';
+document.getElementById('A16').innerHTML = 'n°15';
+document.getElementById('A17').innerHTML = 'n°6';
+document.getElementById('A18').innerHTML = 'n°2';
+document.getElementById('A19').innerHTML = 'n°7';
+document.getElementById('A20').innerHTML = 'n°4';
+$('#C1').css('fill', 'FF00D0');
+$('#C2').css('fill', 'FF0010');
+$('#C3').css('fill', 'FF00F0');
+$('#C4').css('fill', 'FF0010');
+$('#C5').css('fill', 'FF0090');
+$('#C6').css('fill', 'FF00D0');
+$('#C7').css('fill', 'FF0090');
+$('#C8').css('fill', 'FF00FF');
+$('#C9').css('fill', 'FF00F0');
+$('#C10').css('fill', 'FF00B0');
+$('#C11').css('fill', 'FF0030');
+$('#C12').css('fill', 'FF0010');
+$('#C13').css('fill', 'FF00B0');
+$('#C14').css('fill', 'FF0040');
+$('#C15').css('fill', 'FF00A0');
+$('#C16').css('fill', 'FF0010');
+$('#C17').css('fill', 'FF0010');
+$('#C18').css('fill', 'FF0010');
+$('#C19').css('fill', 'FF0010');
+$('#C20').css('fill', 'FF0040');
+break;
+case 2:
+document.querySelector('#Cartes').style.display='block';
+document.getElementById('A1').innerHTML = 'n°10';
+document.getElementById('A2').innerHTML = 'n°10';
+document.getElementById('A3').innerHTML = 'n°10';
+document.getElementById('A4').innerHTML = 'n°10';
+document.getElementById('A5').innerHTML = 'n°3';
+document.getElementById('A6').innerHTML = 'n°10';
+document.getElementById('A7').innerHTML = 'n°10';
+document.getElementById('A8').innerHTML = 'n°10';
+document.getElementById('A9').innerHTML = 'n°1';
+document.getElementById('A10').innerHTML = 'n°10';
+document.getElementById('A11').innerHTML = 'n°2';
+document.getElementById('A12').innerHTML = 'n°4';
+document.getElementById('A13').innerHTML = 'n°8';
+document.getElementById('A14').innerHTML = 'n°10';
+document.getElementById('A15').innerHTML = 'n°9';
+document.getElementById('A16').innerHTML = 'n°4';
+document.getElementById('A17').innerHTML = 'n°6';
+document.getElementById('A18').innerHTML = 'n°10';
+document.getElementById('A19').innerHTML = 'n°10';
+document.getElementById('A20').innerHTML = 'n°7';
+$('#C1').css('fill', 'FF0070');
+$('#C2').css('fill', 'FF0010');
+$('#C3').css('fill', 'FF00E0');
+$('#C4').css('fill', 'FF0020');
+$('#C5').css('fill', 'FF0040');
+$('#C6').css('fill', 'FF00E0');
+$('#C7').css('fill', 'FF00FF');
+$('#C8').css('fill', 'FF0050');
+$('#C9').css('fill', 'FF00D0');
+$('#C10').css('fill', 'FF0090');
+$('#C11').css('fill', 'FF0080');
+$('#C12').css('fill', 'FF00D0');
+$('#C13').css('fill', 'FF0070');
+$('#C14').css('fill', 'FF0090');
+$('#C15').css('fill', 'FF00D0');
+$('#C16').css('fill', 'FF00A0');
+$('#C17').css('fill', 'FF00E0');
+$('#C18').css('fill', 'FF0040');
+$('#C19').css('fill', 'FF00B0');
+$('#C20').css('fill', 'FF0060');
+break;
+case 3:
+document.querySelector('#Cartes').style.display='block';
+document.getElementById('A1').innerHTML = 'n°14';
+document.getElementById('A2').innerHTML = 'n°20';
+document.getElementById('A3').innerHTML = 'n°16';
+document.getElementById('A4').innerHTML = 'n°11';
+document.getElementById('A5').innerHTML = 'n°11';
+document.getElementById('A6').innerHTML = 'n°18';
+document.getElementById('A7').innerHTML = 'n°2';
+document.getElementById('A8').innerHTML = 'n°6';
+document.getElementById('A9').innerHTML = 'n°18';
+document.getElementById('A10').innerHTML = 'n°17';
+document.getElementById('A11').innerHTML = 'n°14';
+document.getElementById('A12').innerHTML = 'n°3';
+document.getElementById('A13').innerHTML = 'n°9';
+document.getElementById('A14').innerHTML = 'n°7';
+document.getElementById('A15').innerHTML = 'n°4';
+document.getElementById('A16').innerHTML = 'n°1';
+document.getElementById('A17').innerHTML = 'n°10';
+document.getElementById('A18').innerHTML = 'n°11';
+document.getElementById('A19').innerHTML = 'n°5';
+document.getElementById('A20').innerHTML = 'n°8';
+$('#C1').css('fill', 'FF0020');
+$('#C2').css('fill', 'FF0040');
+$('#C3').css('fill', 'FF00C0');
+$('#C4').css('fill', 'FF0010');
+$('#C5').css('fill', 'FF0040');
+$('#C6').css('fill', 'FF00F0');
+$('#C7').css('fill', 'FF00D0');
+$('#C8').css('fill', 'FF0010');
+$('#C9').css('fill', 'FF00A0');
+$('#C10').css('fill', 'FF00A0');
+$('#C11').css('fill', 'FF0010');
+$('#C12').css('fill', 'FF00FF');
+$('#C13').css('fill', 'FF0070');
+$('#C14').css('fill', 'FF0080');
+$('#C15').css('fill', 'FF00FF');
+$('#C16').css('fill', 'FF00A0');
+$('#C17').css('fill', 'FF0050');
+$('#C18').css('fill', 'FF00C0');
+$('#C19').css('fill', 'FF00F0');
+$('#C20').css('fill', 'FF00F0');
+break;
+case 4:
+document.querySelector('#Cartes').style.display='block';
+document.getElementById('A1').innerHTML = 'n°4';
+document.getElementById('A2').innerHTML = 'n°14';
+document.getElementById('A3').innerHTML = 'n°14';
+document.getElementById('A4').innerHTML = 'n°10';
+document.getElementById('A5').innerHTML = 'n°2';
+document.getElementById('A6').innerHTML = 'n°14';
+document.getElementById('A7').innerHTML = 'n°14';
+document.getElementById('A8').innerHTML = 'n°14';
+document.getElementById('A9').innerHTML = 'n°5';
+document.getElementById('A10').innerHTML = 'n°5';
+document.getElementById('A11').innerHTML = 'n°11';
+document.getElementById('A12').innerHTML = 'n°13';
+document.getElementById('A13').innerHTML = 'n°2';
+document.getElementById('A14').innerHTML = 'n°5';
+document.getElementById('A15').innerHTML = 'n°14';
+document.getElementById('A16').innerHTML = 'n°11';
+document.getElementById('A17').innerHTML = 'n°5';
+document.getElementById('A18').innerHTML = 'n°14';
+document.getElementById('A19').innerHTML = 'n°9';
+document.getElementById('A20').innerHTML = 'n°1';
+$('#C1').css('fill', 'FF0020');
+$('#C2').css('fill', 'FF00FF');
+$('#C3').css('fill', 'FF0040');
+$('#C4').css('fill', 'FF0020');
+$('#C5').css('fill', 'FF00E0');
+$('#C6').css('fill', 'FF0080');
+$('#C7').css('fill', 'FF0050');
+$('#C8').css('fill', 'FF00B0');
+$('#C9').css('fill', 'FF00D0');
+$('#C10').css('fill', 'FF00B0');
+$('#C11').css('fill', 'FF00D0');
+$('#C12').css('fill', 'FF0070');
+$('#C13').css('fill', 'FF0030');
+$('#C14').css('fill', 'FF00E0');
+$('#C15').css('fill', 'FF0020');
+$('#C16').css('fill', 'FF0050');
+$('#C17').css('fill', 'FF00F0');
+$('#C18').css('fill', 'FF0050');
+$('#C19').css('fill', 'FF0020');
+$('#C20').css('fill', 'FF00D0');
+break;
+case 5:
+document.querySelector('#Cartes').style.display='block';
+document.getElementById('A1').innerHTML = 'n°20';
+document.getElementById('A2').innerHTML = 'n°12';
+document.getElementById('A3').innerHTML = 'n°6';
+document.getElementById('A4').innerHTML = 'n°7';
+document.getElementById('A5').innerHTML = 'n°9';
+document.getElementById('A6').innerHTML = 'n°17';
+document.getElementById('A7').innerHTML = 'n°18';
+document.getElementById('A8').innerHTML = 'n°19';
+document.getElementById('A9').innerHTML = 'n°8';
+document.getElementById('A10').innerHTML = 'n°5';
+document.getElementById('A11').innerHTML = 'n°2';
+document.getElementById('A12').innerHTML = 'n°14';
+document.getElementById('A13').innerHTML = 'n°9';
+document.getElementById('A14').innerHTML = 'n°14';
+document.getElementById('A15').innerHTML = 'n°12';
+document.getElementById('A16').innerHTML = 'n°16';
+document.getElementById('A17').innerHTML = 'n°11';
+document.getElementById('A18').innerHTML = 'n°4';
+document.getElementById('A19').innerHTML = 'n°3';
+document.getElementById('A20').innerHTML = 'n°1';
+$('#C1').css('fill', 'FF00A0');
+$('#C2').css('fill', 'FF0090');
+$('#C3').css('fill', 'FF00A0');
+$('#C4').css('fill', 'FF0030');
+$('#C5').css('fill', 'FF00D0');
+$('#C6').css('fill', 'FF00E0');
+$('#C7').css('fill', 'FF00E0');
+$('#C8').css('fill', 'FF00A0');
+$('#C9').css('fill', 'FF00FF');
+$('#C10').css('fill', 'FF0070');
+$('#C11').css('fill', 'FF0080');
+$('#C12').css('fill', 'FF0020');
+$('#C13').css('fill', 'FF0070');
+$('#C14').css('fill', 'FF0070');
+$('#C15').css('fill', 'FF00B0');
+$('#C16').css('fill', 'FF00B0');
+$('#C17').css('fill', 'FF0080');
+$('#C18').css('fill', 'FF0090');
+$('#C19').css('fill', 'FF00B0');
+$('#C20').css('fill', 'FF00F0');
+break;
+}
+
+
 		}
 		function affichageCarteParQuestionModalite(numQuestion, numModalite){
+
+document.querySelector('#modalite'+numQuestion+'1').style.background="#000";
+		document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#000";
+		affichPrec=numQuestion;
+		affichPrecMod=numModalite;
+
+switch (numModalite){
+	case 1:
+		document.querySelector('#modalite'+numQuestion+numModalite).style.background="#FF0025";
+	break;
+	case 2:
+		document.querySelector('#modalite'+numQuestion+numModalite).style.background="#FFA000";
+	break;
+	case 3:
+		document.querySelector('#modalite'+numQuestion+numModalite).style.background="#00A0D0";
+	break;
+	case 4:
+		document.querySelector('#modalite'+numQuestion+numModalite).style.background="#FF00A0";
+	break;
+}
 
 
 switch (numQuestion) {
