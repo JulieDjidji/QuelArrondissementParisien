@@ -1182,6 +1182,13 @@ body.landing #header {
 
 
 
+.imagecenter {
+	background-color: transparent;
+}
+
+.imagecenter:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
 
 /* Wrapper */
 
@@ -1231,7 +1238,8 @@ body.landing #header {
 .wrapper.style2 .feature {
 			margin: 0 0 2em 0;
 		}
-.wrapper.style4 {
+
+.wrapper.style4 {
 		padding: 6em 0em 0em;
 	}
 
