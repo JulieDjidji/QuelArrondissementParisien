@@ -1555,15 +1555,19 @@ div.tab a:focus, .active {
     to {opacity: 1;}
 }
 
-div.carres .photos {
-display: inline-block;
-}
 
+div.carres .photos div {
+	display: table;
+	width: 25%;
+	padding: 4px;
+	margin: 0;
+	float: left;
+}
 div.carres .photos a {
 	text-align: center;
 	font-weight: 500;
 	height:200px;
-	width:290px;
+	width:100%;
 	display:inline-block;
 	padding-top:80px; 
 	z-index:2;
