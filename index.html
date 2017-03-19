@@ -117,22 +117,37 @@
 			<class id="q1">
 				<h2><span style="font-size: 32px; line-height: 39px;">A quoi ressemble le plus ton régime alimentaire &nbsp;?</span></h2>
 				<div class="container">
-			  		<div class="col-lg-3"> 
 						<div class = "carres" style="position:relative;margin-bottom: 2em; height:200px">
-							<div class = "photos" style="position:absolute;text-align: center;z-index:1">
-							      <a onclick="answerQuestion(1,1)" >
-								<img class="imagecenter" src="images/tyrex.jpg" height="200px" width="290px" alt="" />
-							      </a>
+							<div class = "photos">
+								<div class="col-img">
+								<a onclick="return answerQuestion(1,1)" href="#" style="background:url('images/tyrex.jpg') center center transparent;">
+				      				Tyrex
+    							</a>
+									</div>
+								<div class="col-img">
+								<a onclick="return answerQuestion(1,2)" href="#" style="background:url('images/poissonnerie.jpg') center center transparent;">
+				      				Fish-addict
+    							</a>
+								</div>
+								<div class="col-img">
+							      <a onclick="return answerQuestion(1,3)" href="#" style="background:url('images/malbouf.jpg') center center transparent;">
+				      				Fast-food
+    							</a>
+								</div>
+								<div class="col-img">
+							      <a onclick="return answerQuestion(1,4)" href="#" style="background:url('images/sucre.jpg') center center transparent;">
+				      				Du sucre, c'est tout
+    							</a>
+								</div>
 							</div>
-							<div style="position:absolute;top:40%; width:250px; height:200px; z-index:2;font-size:200%;color=black;">
-				      				<center><b>Tyrex</b></center>
-    							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+
+				</class>
+					<!--<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(1,2)">
+							      <a onclick="return answerQuestion(1,2)" href="#">
 								<img class="imagecenter" src="images/poissonnerie.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -141,10 +156,10 @@
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(1,3)">
+							      <a onclick="return answerQuestion(1,3)" href="#">
 								<img class="imagecenter" src="images/malbouf.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -153,10 +168,10 @@
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(1,4)">
+							      <a onclick="return answerQuestion(1,4)" href="#">
 								<img class="imagecenter" src="images/sucre.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -164,9 +179,8 @@
 				      				<center><b>Du sucre, c'est tout</b></center>
     							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
-
 			</class>
 
 	
@@ -174,12 +188,46 @@
 
 			<class id="q2">
 				<h2><span style="font-size: 32px; line-height: 39px;">Quel sportif es-tu &nbsp;?</span></h2>
+
 				<div class="container">
-			  		<div class="col-lg-3"> 
+					<div class="carres" style="position:relative;margin-bottom: 2em; height:200px">
+						<div class="photos">
+							<div class="col-img">
+								<a onclick="return answerQuestion(2,1)" href="#"
+								   style="background:url('images/schwartzy.jpg') center center transparent;">
+									Schwarzy
+								</a>
+							</div>
+							<div class="col-img">
+								<a onclick="return answerQuestion(2,2)" href="#"
+								   style="background:url('images/football.jpg') center center transparent;">
+									Foot
+								</a>
+							</div>
+							<div class="col-img">
+								<a onclick="return answerQuestion(2,3)" href="#"
+								   style="background:url('images/tennis.jpg') center center transparent;">
+									Tennis
+								</a>
+							</div>
+							<div class="col-img">
+								<a onclick="return answerQuestion(2,4)" href="#"
+								   style="background:url('images/petanque.jpg') center center transparent;">
+									Pétanque
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</class>
+
+
+
+			  		<!--<div class="col-img"> 
 						<div style="position:relative;margin-bottom: 2em;
 height:200px;">
 							<div style="position:absolute;text-align: center;z-index:1">
-							      <a onclick="answerQuestion(2,1)">
+							      <a onclick="return answerQuestion(2,1)" href="#">
 								<img class="imagecenter" src="images/schwartzy.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -188,10 +236,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(2,2)">
+							      <a onclick="return answerQuestion(2,2)" href="#">
 								<img class="imagecenter" src="images/football.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -200,10 +248,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(2,3)">
+							      <a onclick="return answerQuestion(2,3)" href="#">
 								<img class="imagecenter" src="images/tennis.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -212,10 +260,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(2,4)">
+							      <a onclick="return answerQuestion(2,4)" href="#">
 								<img class="imagecenter" src="images/petanque.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -224,20 +272,54 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
+
+			
+
+		<!-- Question 3 -->	
+			<class id="q3">
+				<h2><span style="font-size: 32px; line-height: 39px;">QTes après-midis &nbsp;?</span></h2>
+				<div class="container">
+			  		
+						<div class = "carres" style="position:relative;margin-bottom: 2em; height:200px">
+							<div class = "photos">
+								<div class="col-img">
+							      <a onclick="return answerQuestion(3,1)" href="#" style="background:url('images/parcs.jpg') center center transparent;">
+				      				Posé dans un parc
+				      			</a>
+				      			</div>
+    							
+    							<div class="col-img">
+							      <a onclick="return answerQuestion(3,2)" href="#" style="background:url('images/musees.jpg') center center transparent;">
+				      				Au musée
+    							</a>
+    							</div>
+    							<div class="col-img">
+							      <a onclick="return answerQuestion(3,3)" href="#" style="background:url('images/bibliotheque.jpg') center center transparent;">
+				      				A la bibliothèque
+    							</a>
+    							</div>
+    							<div class="col-img">
+							      <a onclick="return answerQuestion(3,4)" href="#" style="background:url('images/terrasse.jpg') center center transparent;">
+				      				En terrasse
+    							</a>
+    							</div>
+							</div>
+						</div>
+				</div>	
 
 			</class>
 
-		<!-- Question 3 -->	
 
-			<class id="q3">
+
+			<!--<class id="q3">
 				<h2><span style="font-size: 32px; line-height: 39px;">Tes après-midis &nbsp;?</span></h2>
 				<div class="container">
-			  		<div class="col-lg-3"> 
+			  		<div class="col-img"> 
 						<div style="position:relative;margin-bottom: 2em;
 height:200px;">
 							<div style="position:absolute;text-align: center;z-index:1">
-							      <a onclick="answerQuestion(3,1)">
+							      <a onclick="return answerQuestion(3,1)" href="#">
 								<img class="imagecenter" src="images/parcs.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -246,10 +328,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(3,2)">
+							      <a onclick="return answerQuestion(3,2)" href="#">
 								<img class="imagecenter" src="images/musees.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -258,10 +340,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(3,3)">
+							      <a onclick="return answerQuestion(3,3)" href="#">
 								<img class="imagecenter" src="images/bibliotheque.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -270,10 +352,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(3,4)">
+							      <a onclick="return answerQuestion(3,4)" href="#">
 								<img class="imagecenter" src="images/terrasse.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -284,19 +366,51 @@ height:200px;">
 					</div>
 				</div>
 
-			</class>
+			</class> -->
 	
 
 		<!-- Question 4 -->
-
 			<class id="q4">
 				<h2><span style="font-size: 32px; line-height: 39px;">Tes soirées &nbsp;?</span></h2>
 				<div class="container">
-			  		<div class="col-lg-3"> 
+			  		
+						<div class = "carres" style="position:relative;margin-bottom: 2em; height:200px">
+							<div class = "photos">
+								<div class="col-img"> 
+							      <a onclick="return answerQuestion(4,1)" href="#" style="background:url('images/canape.jpg') center center transparent;">
+				      				Tranquille chez toi
+    							</a>
+    							</div>
+    							<div class="col-img"> 
+							      <a onclick="return answerQuestion(4,2)" href="#" style="background:url('images/biere.jpg') center center transparent;">
+				      				Dans un bar
+    							</a>
+    							</div>
+    							<div class="col-img"> 
+							      <a onclick="return answerQuestion(4,3)" href="#" style="background:url('images/theatre.jpg') center center transparent;">
+				      				Au spectacle 
+    							</a>
+    							</div>
+    							<div class="col-img"> 
+							      <a onclick="return answerQuestion(4,4)" href="#" style="background:url('images/restaurant.jpg') center center transparent;">
+				      				Au restaurant
+    							</a>
+    							</div>
+							</div>
+						</div>
+					
+				</div>	
+
+			</class>
+
+			<!--<class id="q4">
+				<h2><span style="font-size: 32px; line-height: 39px;">Tes soirées &nbsp;?</span></h2>
+				<div class="container">
+			  		<div class="col-img"> 
 						<div style="position:relative;margin-bottom: 2em;
 height:200px;">
 							<div style="position:absolute;text-align: center;z-index:1">
-							      <a onclick="answerQuestion(4,1)">
+							      <a onclick="return answerQuestion(4,1)" href="#">
 								<img class="imagecenter" src="images/canape.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -305,10 +419,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(4,2)">
+							      <a onclick="return answerQuestion(4,2)" href="#">
 								<img class="imagecenter" src="images/biere.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -317,10 +431,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(4,3)">
+							      <a onclick="return answerQuestion(4,3)" href="#">
 								<img class="imagecenter" src="images/theatre.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -329,10 +443,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="answerQuestion(4,4)">
+							      <a onclick="return answerQuestion(4,4)" href="#">
 								<img class="imagecenter" src="images/restaurant.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -343,19 +457,52 @@ height:200px;">
 					</div>
 				</div>
 
-			</class>
+			</class>-->
 	
 
 		<!-- Question 5 -->
 
-			<class id="q5">
+		<class id="q5">
 				<h2><span style="font-size: 32px; line-height: 39px;">Tu ne sors jamais sans &nbsp;?</span></h2>
 				<div class="container">
-			  		<div class="col-lg-3"> 
+			  		
+						<div class = "carres" style="position:relative;margin-bottom: 2em; height:200px">
+							<div class = "photos">
+								<div class="col-img"> 
+							      <a onclick="return affichageReponse(5,1)" href="#" style="background:url('images/poussette.jpg') center center transparent;">
+				      				Une poussette
+    							</a>
+    							</div>
+    							<div class="col-img"> 
+							      <a onclick="return affichageReponse(5,2)" href="#" style="background:url('images/bouteilles.jpg') center center transparent;">
+				      				Ta bouteille
+    							</a>
+    							</div>
+    							<div class="col-lg-3"> 
+							      <a onclick="return affichageReponse(5,3)" href="#" style="background:url('images/medocs.jpg') center center transparent;">
+				      				Tes médocs 
+    							</a>
+    							</div>
+    							<div class="col-img"> 
+							      <a onclick="return affichageReponse(5,4)" href="#" style="background:url('images/chaussure.jpg') center center transparent;">
+				      				Etre sur ton 31
+    							</a>
+    							</div>
+							</div>
+						</div>
+					
+				</div>	
+
+			</class>
+
+			<!--<class id="q5">
+				<h2><span style="font-size: 32px; line-height: 39px;">Tu ne sors jamais sans &nbsp;?</span></h2>
+				<div class="container">
+			  		<div class="col-img"> 
 						<div style="position:relative;margin-bottom: 2em;
 height:200px;">
 							<div style="position:absolute;text-align: center;z-index:1">
-							      <a onclick="affichageReponse(5,1)">
+							      <a onclick="affichageReponse(5,1)" href="#">
 								<img class="imagecenter" src="images/poussette.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -364,10 +511,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="affichageReponse(5,2)">
+							      <a onclick="affichageReponse(5,2)" href="#">
 								<img class="imagecenter" src="images/bouteilles.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -376,10 +523,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="affichageReponse(5,3)">
+							      <a onclick="affichageReponse(5,3)" href="#">
 								<img class="imagecenter" src="images/medocs.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -388,10 +535,10 @@ height:200px;">
     							</div>
 						</div>
 					</div>
-					<div class="col-lg-3"> 
+					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="affichageReponse(5,4)">
+							      <a onclick="affichageReponse(5,4)" href="#">
 								<img class="imagecenter" src="images/chaussure.png" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -402,7 +549,7 @@ height:200px;">
 					</div>
 				</div>
 
-			</class>
+			</class>-->
 
 		</div>
 		</section>
@@ -549,12 +696,17 @@ height:200px;">
 		document.querySelector('#q5').style.display='none';
 		document.querySelector('#reponse').style.display='none';
 		document.querySelector('#comparaisonArrondissements').style.display='none';
+		document.getElementById("myCheckbox").addEventListener("click", function(event){
+    			event.preventDefault()
+		});
 		function answerQuestion(nQ,answer){
+
 			result[nQ-1]=answer;
 			var qSuiv=nQ+1;
 			//document.getElementById("q1").innerHTML = result;
 			document.querySelector('#q'+nQ).style.display='none';
 			document.querySelector('#q'+qSuiv).style.display='block';
+			return false;
 		}
 		function affichageReponse(nQ,answer){
 			result[nQ-1]=answer;
@@ -1651,17 +1803,10 @@ if (result[0] == 2){var src_graph1= "https://embed.chartblocks.com/1.0/?c=58cc1c
 if (result[0] == 3){var src_graph1= "https://embed.chartblocks.com/1.0/?c=58cc0cf79973d26863399d3f&t=a7bafb448e290f7";}
 if (result[0] == 4){var src_graph1= "https://embed.chartblocks.com/1.0/?c=58c81b4e9973d22b78399d3d&t=ed6dd5cd723e8fd";}
 
-<<<<<<< HEAD
-if (result[1] == 1){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58c823059973d22e7a399d3d&t=04d0685d913a72f";}
-if (result[1] == 2){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58c81bf29973d28f78399d41&t=c5505fc36006376";}
-if (result[1] == 3){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58c81bf29973d28f78399d41&t=c5505fc36006376";}
-if (result[1] == 4){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58c81b4e9973d22b78399d3d&t=ed6dd5cd723e8fd";}
-=======
 if (result[1] == 1){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58cc0d8a9973d2a063399d3d&t=dc4bd47cac1ea81";}
 if (result[1] == 2){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58cc089c9973d28462399d3d&t=ad14a752e934ba9";}
 if (result[1] == 3){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58cc10cb9973d23764399d3d&t=bd63dce45e802ca";}
 if (result[1] == 4){var src_graph2= "https://embed.chartblocks.com/1.0/?c=58c81bf29973d28f78399d41&t=c5505fc36006376";}
->>>>>>> 8b43d42258c56624b831f6eafb2d101d6a722d39
 
 if (result[2] == 1){var src_graph3= "https://embed.chartblocks.com/1.0/?c=58c824db9973d2b67a399d3d&t=8b8b3ff16db4375";}
 if (result[2] == 2){var src_graph3= "https://embed.chartblocks.com/1.0/?c=58c819949973d2cd77399d3d&t=96dc137639bf55d";}
@@ -1713,7 +1858,7 @@ if (result[4] == 4){var src_graph5= "https://embed.chartblocks.com/1.0/?c=58c81c
 			document.getElementById("texte_graphique5").innerHTML = texte_graph5;
 
 			document.getElementById("iframe5").src = src_graph5;
-
+				return false;
 		}
 	</script>
 

@@ -1554,3 +1554,24 @@ div.tab a:focus, .active {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+
+div.carres .photos div {
+	display: table;
+	width: 25%;
+	padding: 4px;
+	margin: 0;
+	float: left;
+}
+div.carres .photos a {
+	text-align: center;
+	font-weight: 500;
+	height:200px;
+	width:100%;
+	display:inline-block;
+	padding-top:80px; 
+	z-index:2;
+	font-size:200%;
+	color:white;
+	text-decoration:none;
+}
