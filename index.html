@@ -502,7 +502,7 @@ height:200px;">
 						<div style="position:relative;margin-bottom: 2em;
 height:200px;">
 							<div style="position:absolute;text-align: center;z-index:1">
-							      <a onclick="affichageReponse(5,1)" href="#">
+							      <a href="reponse" onclick="affichageReponse(5,1)" href="#">
 								<img class="imagecenter" src="images/poussette.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -514,7 +514,7 @@ height:200px;">
 					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="affichageReponse(5,2)" href="#">
+							      <a href="reponse" onclick="affichageReponse(5,2)" href="#">
 								<img class="imagecenter" src="images/bouteilles.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -526,7 +526,7 @@ height:200px;">
 					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="affichageReponse(5,3)" href="#">
+							      <a href="reponse" onclick="affichageReponse(5,3)" href="#">
 								<img class="imagecenter" src="images/medocs.jpg" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -538,7 +538,7 @@ height:200px;">
 					<div class="col-img"> 
 						<div style="position:relative; height:200px">
 							<div style="position:absolute;z-index:1">
-							      <a onclick="affichageReponse(5,4)" href="#">
+							      <a href="reponse" onclick="affichageReponse(5,4)" href="#">
 								<img class="imagecenter" src="images/chaussure.png" height="200px" width="290px" alt="" />
 							      </a>
 							</div>
@@ -571,14 +571,28 @@ height:200px;">
 </div>
 
 
-
-
 <div class = "container">
-
-						<div class="col-lg-2" style="display:block; text-align: center"></div>
-					
-
+	<div class="col-lg-2" style="display:block; text-align: center"></div>	
 </div>
+
+
+	<div class="wrapper style4 align-center" style="display: flex;justify-content: center;">
+		<ul class="nav nav-pills align-center">
+ 
+			<li class="active">
+				<a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="openCity(event, 'Answer1')" id="reponse1">Régime alimentaire</a>
+			</li>
+			<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="openCity(event, 'Answer2')" id="reponse2">Sport</a>
+			</li>	
+			<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="openCity(event, 'Answer3')" id="reponse3">Après-midis</a>
+			</li>
+			<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="openCity(event, 'Answer4')" id="reponse4">Soirées</a>
+			</li>
+			<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="openCity(event, 'Answer5')" id="reponse5">Accessoire</a></li>							
+		</ul>
+	</div>
+
+<!--
 <div id=" graph " class="tab" style="display:block; margin: 0 auto">
   <a  class="tablinks" onclick="openCity(event, 'Answer1')" id="reponse1"></a>
   <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Answer2')" id="reponse2"></a>
@@ -586,53 +600,40 @@ height:200px;">
      <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Answer4')" id="reponse4"></a>
      <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Answer5')" id="reponse5"></a>
 </div>
+-->
 
 <div id="Answer1" class="tabcontent">
-	<h3 class = "text_graphique" id="texte_graphique1">
-	</h3>
-<iframe width="800" height="450" frameBorder="0" id = "iframe1"></iframe>
-  <script src="js/index_fabien.js"></script>
+	<h3 class = "text_graphique" id="texte_graphique1"></h3>
+	<iframe width="800" height="450" frameBorder="0" id = "iframe1"></iframe>
+  	<script src="js/index_graph.js"></script>
 </div>
 
-
 <div id="Answer2" class="tabcontent">
-	<h3 class = "text_graphique" id="texte_graphique2">
-	</h3>
-<iframe width="800" height="450" frameBorder="0" id = "iframe2"></iframe>
-  <script src="js/index_fabien.js"></script>
+	<h3 class = "text_graphique" id="texte_graphique2"></h3>
+	<iframe width="800" height="450" frameBorder="0" id = "iframe2"></iframe>
 </div>
 
 <div id="Answer3" class="tabcontent">
-	<h3 class = "text_graphique" id="texte_graphique3">
-	</h3>
-<iframe width="800" height="450" frameBorder="0" id = "iframe3"></iframe>
-  <script src="js/index_fabien.js"></script>
+	<h3 class = "text_graphique" id="texte_graphique3"></h3>
+	<iframe width="800" height="450" frameBorder="0" id = "iframe3"></iframe>
 </div>
 
 <div id="Answer4" class="tabcontent">
-	<h3 class = "text_graphique" id="texte_graphique4">
-	</h3>
-<iframe width="800" height="450" frameBorder="0" id = "iframe4"></iframe>
-  <script src="js/index_fabien.js"></script>
+	<h3 class = "text_graphique" id="texte_graphique4"></h3>
+	<iframe width="800" height="450" frameBorder="0" id = "iframe4"></iframe>
 </div>
 
-
 <div id="Answer5" class="tabcontent">
-	<h3 class = "text_graphique" id="texte_graphique5">
-	</h3>
-<iframe width="800" height="450" frameBorder="0" id = "iframe5"></iframe>
-  <script src="js/index_fabien.js"></script>
+	<h3 class = "text_graphique" id="texte_graphique5"></h3>
+	<iframe width="800" height="450" frameBorder="0" id = "iframe5"></iframe>
 </div>
 
 
 				</div>
 			</section>
 			
-
-
-
 	<!-- Comparaison des arrondissements -->
-			<section id="comparaisonArrondissements" class="wrapper style2 align-center">
+			<section id="comparaisonArrondissements" class="wrapper style2 align-center" style="padding-top: 0em;">
 				<h2>Envie de comparer les arrondissements ?</h2>
 				<h3> Tu viens de faire le test mais tu souhaites mieux connaître les arrondissements. </h3>
 				<h4>Pas de soucis, clique et découvre le classement des arrondissements selon chaque critère ! </h4>
@@ -1829,36 +1830,33 @@ if (result[4] == 4){var src_graph5= "https://embed.chartblocks.com/1.0/?c=58c81c
 			document.getElementById("selectArrondissement").innerHTML = 'Enjoy your life, vis dans le '+arrondissement+'ème';
 			$('#selectArrondissement').css('font-weight', 'bold');
 
+			document.querySelector('#Answer2').style.display='none';
+			document.querySelector('#Answer3').style.display='none';
+			document.querySelector('#Answer4').style.display='none';
+			document.querySelector('#Answer5').style.display='none';
+
 			document.getElementById("reponse1").innerHTML = rep1;
-
 			document.getElementById("reponse2").innerHTML = rep2;
-
 			document.getElementById("reponse3").innerHTML = rep3;
-
 			document.getElementById("reponse4").innerHTML = rep4;
-
 			document.getElementById("reponse5").innerHTML = rep5;
 
 			document.getElementById("texte_graphique1").innerHTML = texte_graph1;
-
 			document.getElementById("iframe1").src = src_graph1;
 
 			document.getElementById("texte_graphique2").innerHTML = texte_graph2;
-
 			document.getElementById("iframe2").src = src_graph2;
 
 			document.getElementById("texte_graphique3").innerHTML = texte_graph3;
-
 			document.getElementById("iframe3").src = src_graph3;
 
 			document.getElementById("texte_graphique4").innerHTML = texte_graph4;
-
 			document.getElementById("iframe4").src = src_graph4;
 
 			document.getElementById("texte_graphique5").innerHTML = texte_graph5;
-
 			document.getElementById("iframe5").src = src_graph5;
 				return false;
+
 		}
 	</script>
 
