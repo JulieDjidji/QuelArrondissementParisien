@@ -1598,10 +1598,35 @@ a.bouton_question:hover {
 	opacity: 0.6;
 }
 
+.dis-nous .text-bulle {
+	position:relative;
+	width : 15%;
+	text-align:center;
+	border-radius: 220px/120px;
+	border-width: 0 0px 0;
+	border-style: solid;
+	bottom:30px;
+	left:0px;
+	top:2%;
+	visibility:hidden;
+  }
+
+.dis-nous:hover .text-bulle {
+	visibility:visible;
+}
+
+.bulle{
+	position:relative;
+	border-radius: 220px/120px;
+	border-width: 15px 15px 0;
+	border-style: solid;
+	left:0px;
+	float: left;
+	width:15%;
+}
 
 
-
-
-
-
-
+.text-dis-nous{
+	font-size: 20;
+	font-family: Verdana;
+}
