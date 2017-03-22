@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 @import url(font-awesome.min.css);
 
@@ -1582,3 +1582,26 @@ a.lien_source{
 a.lien_source:hover{
 	color:blue;
 }
+.contact{
+	
+}
+
+
+.col-img a {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+a.bouton_question:hover {
+	opacity: 0.6;
+}
+
+
+
+
+
+
+
+
