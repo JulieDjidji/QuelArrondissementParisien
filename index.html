@@ -87,7 +87,7 @@
 					<ul >
 						<li><a href="index.html">Faire le test</a></li>       
 						<li><a href="sources.html">Les arrondissements parisiens</a></li>
-						<li><a href="about.html">Sources </a></li>
+						<li><a href="about.html">En savoir plus</a></li>
                         
 					</ul>
 				</nav>
@@ -132,7 +132,7 @@
 							<div class = "photos">
 								<div class="col-img">
 									<a class="bouton_question" onclick="return answerQuestion(1,1)" href="#" style="background:url('images/tyrex.jpg') center center transparent;">
-				      				Tyrex
+				      				Carnivore
     								</a>
 								</div>
 								<div class="col-img">
@@ -506,63 +506,6 @@ height:200px;">
 				</div>	
 
 			</class>
-
-			<!--<class id="q5">
-				<h2><span style="font-size: 32px; line-height: 39px;">Tu ne sors jamais sans &nbsp;?</span></h2>
-				<div class="container">
-			  		<div class="col-img"> 
-						<div style="position:relative;margin-bottom: 2em;
-height:200px;">
-							<div style="position:absolute;text-align: center;z-index:1">
-							      <a href="#reponse" onclick="affichageReponse(5,1)">
-								<img class="imagecenter" src="images/poussette.jpg" height="200px" width="290px" alt="" />
-							      </a>
-							</div>
-							<div style="position:absolute;top:40%; width:250px; height:200px; z-index:2;font-size:200%;color=black;">
-				      				<center><b>Une poussette</b></center>
-    							</div>
-						</div>
-					</div>
-					<div class="col-img"> 
-						<div style="position:relative; height:200px">
-							<div style="position:absolute;z-index:1">
-							      <a href="#reponse" onclick="affichageReponse(5,2)">
-								<img class="imagecenter" src="images/bouteilles.jpg" height="200px" width="290px" alt="" />
-							      </a>
-							</div>
-							<div style="position:absolute;top:40%; width:250px; height:200px; z-index:2;font-size:200%;color=black;">
-				      				<center><b>Ta bouteille</b></center>
-    							</div>
-						</div>
-					</div>
-					<div class="col-img"> 
-						<div style="position:relative; height:200px">
-							<div style="position:absolute;z-index:1">
-							      <a href="#reponse" onclick="affichageReponse(5,3)">
-								<img class="imagecenter" src="images/medocs.jpg" height="200px" width="290px" alt="" />
-							      </a>
-							</div>
-							<div style="position:absolute;top:40%; width:250px; height:200px; z-index:2;font-size:200%;color=black;">
-				      				<center><b>Tes médocs</b></center>
-    							</div>
-						</div>
-					</div>
-					<div class="col-img"> 
-						<div style="position:relative; height:200px">
-							<div style="position:absolute;z-index:1">
-							      <a href="#reponse" onclick="affichageReponse(5,4)">
-								<img class="imagecenter" src="images/chaussure.png" height="200px" width="290px" alt="" />
-							      </a>
-							</div>
-							<div style="position:absolute;top:50%; width:250px; height:200px; z-index:2;font-size:200%;color=black;">
-				      				<center><b>Etre sur ton 31</b></center>
-    							</div>
-						</div>
-					</div>
-				</div>
-
-			</class>-->
-
 		</div>
 		</section>
 
@@ -573,17 +516,27 @@ height:200px;">
 
 	<!-- Résultat du quiz-->
 			<section id="reponse" class="wrapper style2 align-center">
+				<h1 style="font-size: 30pt;" class="align-center"> Tu es fait(e) pour vivre dans le : </h1>
 				<div class="container">
 					<!--<h2>Dis nous qui tu es, nous te dirons où tu dois vivre !</h2>-->
-					<div class="row">
-        					<div class="col-lg-2"></div>
-						<div class="col-lg-4"><img id="coupe" class="imagecenter" src="images/coupe.jpg"  width="400" alt="" ></div>
-        					<div class="col-lg-4" style="top:40px;">
-<h3 id="selectArrondissement" style="font-size: 30pt;"> </h3></div>
-</div>
+					
+						<div class="col-lg-6 align-right">
+							<img id="coupe" class="imagecenter align-center" src="images/coupe.jpg"  width="200" alt=""/>
+						</div>
+						
+        					<div class="col-lg-6 align-left" style="top:40px;">
+								<h3 id="selectArrondissement" style="font-size: 30pt;"><sup>ème</sup> </h3>
+							</div>
+					
+				
 
 
 <div class = "container">
+	<div class="wrapper style4">
+		<h3 style="padding-top:15%;"> Pourquoi cet arrondissement est fait pour toi ? Regarde comment se situent les variables associées à tes réponses dans chaque arrondissement.
+		</h3>
+	</div>
+
 	<div class="col-lg-2" style="display:block; text-align: center"></div>	
 </div>
 
@@ -993,12 +946,16 @@ height:200px;">
 
 </div>
 
-
 				</div>
 			</section>
 			
+
+					
 	<!-- Comparaison des arrondissements -->
 			<section id="comparaisonArrondissements" class="wrapper style2 align-center" style="padding-top: 0em;">
+				<div role="tabpanel" class="tab-pane active" id="one">
+					<section id="one" class="wrapper style3 align-center">
+    
 				<h2>Envie d'en savoir plus sur les arrondissements parisiens ?</h2>
 				<!--<h3> Tu viens de faire le test mais tu souhaites mieux connaître les arrondissements. </h3>-->
 				<h4>Découvre le classement des arrondissements selon chaque critère. </h4>
@@ -1009,8 +966,22 @@ height:200px;">
 						</li>
 					</ul>
 				</nav>
-			</section>
+				
 
+				</section>
+
+
+			</div>
+			<div class="container">
+			<div class="wrapper" style="padding-top:0px; padding-bottom:0px;">
+			<h3 class="wrapper style4">Sceptique ? 
+				<br> Consulte la <a href="about.html">méthodologie</a> pour comprendre comment ton arrondissement a été choisi et quels ont été les données utilisées pour construire le score. </h3>
+			</div>
+			</div>
+	
+		</section>
+	
+		
 
 	<!-- Mettre un retour en haut de la page -->
 	<a href="#" class="lien_source" style="display: block;text-align: center;
@@ -1029,19 +1000,19 @@ height:200px;">
 					</ul>
 				</section>
 				
-				<section class="5u$ 12u$(medium) 12u$(small)">
+								<section class="5u$ 12u$(medium) 12u$(small)">
 					<h3>NOUS CONTACTER</h3>
 					<ul class="tabular">
-					<li> <h3>Mail</h3>
+					<li> <h3><a href="mailto:quelarrondissementparisien@gmail.com" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
 							<h4><a href="mailto:quelarrondissementparisien@gmail.com">quelarrondissementparisien@gmail.com</a></h4> </li>
 									<li> <h3><a href="http://www.linkedin.com/in/fabien-agnus-b39b226b" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="http://www.linkedin.com/in/fabien-agnus-b39b226b">Fabien Agnus</a></h4> </li>
+                                	<li><h3><a href="julie.djiriguian@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Julie Djiriguan</a></h4> </li>
                                 	<li> <h3><a href="http://www.linkedin.com/in/noémie-haouzi-317347131" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="http://www.linkedin.com/in/noémie-haouzi-317347131">Noémie Haouzi</a></h4> </li>
 									<li> <h3><a href="http://linkedin.com/in/eva-hoyau-77250762" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="http://linkedin.com/in/eva-hoyau-77250762">Eva Hoyau</a></h4> </li>
-                                	<li><h3><a href="julie.djiriguian@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
-                                			<h4><a href="adresse perso gmail">Julie Djiriguan</a></h4> </li>
 									<li><h3><a href="gaetan.polard@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
                                 			<h4><a href="adresse perso gmail">Gaetan Polard</a></h4> </li>
 					</ul>
@@ -2115,7 +2086,7 @@ if (result[0] == 1 && result[1]==1 && result[2]==1 && result[3]==1 && result[4]=
 			document.getElementById("coupe").src= "images/rvn_arrondissement-"+arrondissement +".png";
 
 
-if (result[0] == 1){var rep1= "T-Rex";}
+if (result[0] == 1){var rep1= "Carnivore";}
 if (result[0] == 2){var rep1= "Fish-addict";}
 if (result[0] == 3){var rep1= "Fast-food";}
 if (result[0] == 4){var rep1= "Du sucre, c'est tout";}
@@ -2142,34 +2113,34 @@ if (result[4] == 4){var rep5= "Être sur ton 31";}
 
 
 
-if (result[0] == 1){var texte_graph1= "Pour un T-Rex, il faut suffisamment de boucheries/charcuteries (sinon la population risque de diminuer brusquement ...)";}
-if (result[0] == 2){var texte_graph1= "Il te faudra des poissonniers pour profiter des ressources de la Seine";}
+if (result[0] == 1){var texte_graph1= "Pour un carnivore comme toi, il te faut des boucheries";}
+if (result[0] == 2){var texte_graph1= "Il te faut des poissonniers pour profiter des ressources de la Seine";}
 if (result[0] == 3){var texte_graph1= "Vous avez dit Healthy ?";}
 if (result[0] == 4){var texte_graph1= "Un plein de sucre à la patisserie du coin";}
 
 
-if (result[1] == 1){var texte_graph2= "De la fonte et de la sueur";}
-if (result[1] == 2){var texte_graph2= "Trouver son Parc des Princes";}
-if (result[1] == 3){var texte_graph2= "Pour un Roland-Garros chez toi";}
-if (result[1] == 4){var texte_graph2= "Tu piques ou tu pointes ?";}
+if (result[1] == 1){var texte_graph2= "Amateur de fonte ?";}
+if (result[1] == 2){var texte_graph2= "Un Parc des Princes près de chez toi";}
+if (result[1] == 3){var texte_graph2= "Un Roland-Garros près de chez toi";}
+if (result[1] == 4){var texte_graph2= "Tu tires ou tu pointes ?";}
 
 
-if (result[2] == 1){var texte_graph3= "";}
-if (result[2] == 2){var texte_graph3= "Il faut des poissonniers pour profiter des ressources de la Seine";}
-if (result[2] == 3){var texte_graph3= "Vous avez dit Healthy ?";}
-if (result[2] == 4){var texte_graph3= "Un plein de sucre à la patisserie du coin";}
+if (result[2] == 1){var texte_graph3= "Besoin d'un peu d'air pur ?";}
+if (result[2] == 2){var texte_graph3= "Les musées, un lieu incontournable pour les amateurs d'art";}
+if (result[2] == 3){var texte_graph3= "Rien de mieux qu'une bibliothèque pour un bosseur comme toi";}
+if (result[2] == 4){var texte_graph3= "Rien de mieux que faire bronzette au soleil";}
 
 
-if (result[3] == 1){var texte_graph4= "Pour un T-Rex, il faudra suffisamment  de boucheries/charcuteries au km2 (sinon la population risque de diminuer brusquement)";}
-if (result[3] == 2){var texte_graph4= "Il faut des poissonniers pour profiter des ressources de la Seine";}
-if (result[3] == 3){var texte_graph4= "Vous avez dit Healthy ?";}
-if (result[3] == 4){var texte_graph4= "Un plein de sucre à la patisserie du coin";}
+if (result[3] == 1){var texte_graph4= "Pour tes soirées télé, il te faut une zone calme";}
+if (result[3] == 2){var texte_graph4= "Pour boire ta petite mousse, il te faut des bars près de chez toi";}
+if (result[3] == 3){var texte_graph4= "Pour être sous les feux de la rampe, pourquoi pas du théatre";}
+if (result[3] == 4){var texte_graph4= "Envie d'un bon repas près de chez soi ?";}
 
 
 if (result[4] == 1){var texte_graph5= "Des écoles pour que poussent les bouts de choux";}
-if (result[4] == 2){var texte_graph5= "Il faut des poissonniers pour profiter des ressources de la Seine";}
-if (result[4] == 3){var texte_graph5= "Vous avez dit Healthy ?";}
-if (result[4] == 4){var texte_graph5= "Un plein de sucre à la patisserie du coin";}
+if (result[4] == 2){var texte_graph5= "Une petite bouteille au cas où...";}
+if (result[4] == 3){var texte_graph5= "Le plein de médocs c'est essentiel";}
+if (result[4] == 4){var texte_graph5= "Pour être sur ton 31, il te faut de quoi t'habiller";}
 
 
 
@@ -5611,8 +5582,8 @@ document.getElementById("label_5_20").style.fontWeight = font_5_20;
 
 
 
-
-			document.getElementById("selectArrondissement").innerHTML = 'Tu es fais pour vivre dans le : '+arrondissement+'ème';
+			var exposant = 'ème';
+			document.getElementById("selectArrondissement").innerHTML = arrondissement+exposant.sup();
 			$('#selectArrondissement').css('font-weight', 'bold');
 
 			document.querySelector('#Answer2').style.display='none';
