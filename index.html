@@ -132,7 +132,7 @@
 							<div class = "photos">
 								<div class="col-img">
 									<a class="bouton_question" onclick="return answerQuestion(1,1)" href="#" style="background:url('images/tyrex.jpg') center center transparent;">
-				      				Tyrex
+				      				Carnivore
     								</a>
 								</div>
 								<div class="col-img">
@@ -525,7 +525,7 @@ height:200px;">
 						</div>
 						
         					<div class="col-lg-6 align-left" style="top:40px;">
-								<h3 id="selectArrondissement" style="font-size: 30pt;"> </h3>
+								<h3 id="selectArrondissement" style="font-size: 30pt;"><sup>ème</sup> </h3>
 							</div>
 					
 				
@@ -946,15 +946,16 @@ height:200px;">
 
 </div>
 
-<h3 class="sceptique">		Sceptique ? Consulte la <a href="about.html">méthodologie</a> pour comprendre comment ton arrondissement a été choisi.  </h3>
-
 				</div>
 			</section>
 			
 
-	
+					
 	<!-- Comparaison des arrondissements -->
 			<section id="comparaisonArrondissements" class="wrapper style2 align-center" style="padding-top: 0em;">
+				<div role="tabpanel" class="tab-pane active" id="one">
+					<section id="one" class="wrapper style3 align-center">
+    
 				<h2>Envie d'en savoir plus sur les arrondissements parisiens ?</h2>
 				<!--<h3> Tu viens de faire le test mais tu souhaites mieux connaître les arrondissements. </h3>-->
 				<h4>Découvre le classement des arrondissements selon chaque critère. </h4>
@@ -965,8 +966,22 @@ height:200px;">
 						</li>
 					</ul>
 				</nav>
-			</section>
+				
 
+				</section>
+
+
+			</div>
+			<div class="container">
+			<div class="wrapper" style="padding-top:0px; padding-bottom:0px;">
+			<h3 class="wrapper style4">Sceptique ? 
+				<br> Consulte la <a href="about.html">méthodologie</a> pour comprendre comment ton arrondissement a été choisi et quels ont été les données utilisées pour construire le score. </h3>
+			</div>
+			</div>
+	
+		</section>
+	
+		
 
 	<!-- Mettre un retour en haut de la page -->
 	<a href="#" class="lien_source" style="display: block;text-align: center;
@@ -5567,8 +5582,8 @@ document.getElementById("label_5_20").style.fontWeight = font_5_20;
 
 
 
-
-			document.getElementById("selectArrondissement").innerHTML = arrondissement+'ème';
+			var exposant = 'ème';
+			document.getElementById("selectArrondissement").innerHTML = arrondissement+exposant.sup();
 			$('#selectArrondissement').css('font-weight', 'bold');
 
 			document.querySelector('#Answer2').style.display='none';
