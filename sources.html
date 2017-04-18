@@ -114,8 +114,10 @@
         <!-- CARTE-->
 			<section class="wrapper style4 align-center">
 
-				<div class="wrapper style4 align-center">
-					<h3>Ne te contente pas de visualiser que tes réponses ! Nous te proposons maintenant de découvrir l'ensemble des informations utilisées pour construire les scores. Clique sur une question et choisis la modalité que tu souhaites représenter sur la carte : Voici alors le classement des arrondissement pour cette modalité !</h3>
+				<div class="container">
+					<div class="wrapper style4 align-center">
+						<h3>Ne te contente pas de visualiser que tes réponses ! Nous te proposons maintenant de découvrir l'ensemble des informations utilisées pour construire les scores. Clique sur une question et choisis la modalité que tu souhaites représenter sur la carte : Voici alors le classement des arrondissement pour cette modalité !</h3>
+					</div>
 				</div>
 
 					<div class="wrapper style5 align-center" style="justify-content:right; padding-top: 0%;">
@@ -587,10 +589,10 @@ $('#C20').css('fill', '550000');
 		var affichPrecMod=1;
 
 		function affichageCarteParQuestion(answer){
-			document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#000";
+			document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#D1CEC4";
 			document.querySelector('#sidebar'+affichPrec).style.display='none';
 			document.querySelector('#sidebar'+answer).style.display='block';
-			document.querySelector('#boutonQuestion'+affichPrec).style.background="#000";
+			document.querySelector('#boutonQuestion'+affichPrec).style.background="#D1CEC4";
 			document.querySelector('#boutonQuestion'+answer).style.background="#AA3939";
 			affichPrec=answer;
 			document.querySelector('#modalite'+answer+'1').style.background="#AA3939";
@@ -823,8 +825,8 @@ break;
 		}
 		function affichageCarteParQuestionModalite(numQuestion, numModalite){
 
-document.querySelector('#modalite'+numQuestion+'1').style.background="#000";
-		document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#000";
+document.querySelector('#modalite'+numQuestion+'1').style.background="#D1CEC4";
+		document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#D1CEC4";
 		affichPrec=numQuestion;
 		affichPrecMod=numModalite;
 
