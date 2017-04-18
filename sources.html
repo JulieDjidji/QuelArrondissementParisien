@@ -69,21 +69,25 @@
 
 
 <!-- PARTIE BODY-->
-	<body>
+	<body class="landing">
 
 
 	<!-- En-tête : les boutons en haut à droite -->
 			<header id="header">
-				<!--<h1><a href="#description">Description</a></h1>-->
+				<!--h1><a href="#description">Description</a></h1-->
 				<nav id="nav">                   
 					<ul >
-						<li><a href="index.html">Faire le test</a></li>
+						<li><a href="index.html">Faire le test</a></li>       
 						<li><a href="sources.html">Les arrondissements parisiens</a></li>
-			            <li><a href="about.html">Sources</a></li>
+						<li><a href="about.html">En savoir plus</a></li>
                         
 					</ul>
 				</nav>
 			</header>
+
+		<section id="bannerSmall">
+			<h2>Curieux de comparer les différents arrondissements ?</h2>
+		</section>		
 
 	<!-- Main 
 
@@ -110,10 +114,14 @@
         <!-- CARTE-->
 			<section class="wrapper style4 align-center">
 
+				<div class="wrapper style4 align-center">
+					<h3>Ne te contente pas de visualiser que tes réponses ! Nous te proposons maintenant de découvrir l'ensemble des informations utilisées pour construire les scores. Clique sur une question et choisis la modalité que tu souhaites représenter sur la carte : Voici alors le classement des arrondissement pour cette modalité !</h3>
+				</div>
 
-				<h2>Curieux de comparer les différents arrondissements ?</h2>
-					<div class="wrapper style5 align-center" style="display: flex;justify-content: center;
-">
+					<div class="wrapper style5 align-center" style="justify-content:right; padding-top: 0%;">
+						<img class="imagecenter" src="images/Question.jpg" height="100px" width="140px" alt="" />
+					</div>
+					<div class="wrapper style5 align-center" style="display: flex;justify-content: center;">
   
 					<ul class="nav nav-pills align-center">
   
@@ -126,11 +134,14 @@
 </li>
 						<li><a class="btn button big" style="padding-top: 0px;" data-toggle="tab" onclick="affichageCarteParQuestion(5)" id="boutonQuestion5">Accessoire</a></li>							</ul>
 					</div>
+					
 
 			<!-- <div class="clearfix"></div> -->
+			<p id="nom_question"> </p>
 
 	<div class="container">
   	<div class="col-lg-2"> 
+	<img class="imagecenter" src="images/reponse.jpg" height="100px" width="140px" alt="" />
 	<div id="sidebar">
 		<div id="sidebar1" class="pull-left">		
 			<div class="item">	   
@@ -297,7 +308,7 @@
 
 		<div id="map">
 		<svg height="705" version="1.1" width="980" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.078125px;" viewBox="0 0 980 705" preserveAspectRatio="none">
-			<desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc>
+			<desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></desc>
 <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
 
 			<path fill="#fff1cb" stroke="#f4f4f4" d="M269,335L341,425L362,425L380,434L403,430L470,384L496,350L417,303L313,300L286,316Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;"  id="C7"></path>
@@ -344,73 +355,73 @@
 	     	
 		<div class="item" id="a-1">
 	    		<div class="img-circle">
-	    			<div class="district">I<sup>er</sup></div>
+	    			<div class="district">1<sup>er</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A1"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-2">
 	    		<div class="img-circle">
-	    			<div class="district">II<sup>ème</sup></div>
+	    			<div class="district">2<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A2"></div>
 		    	</div>
 		    </div>
 		<div class="item" id="a-3">
 	    		<div class="img-circle">
-	    			<div class="district">III<sup>ème</sup></div>
+	    			<div class="district">3<sup>ème</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A3"></div>
 		    	</div>
 		</div>
 	    	<div class="item" id="a-4">
 	    		<div class="img-circle">
-	    			<div class="district">IV<sup>ème</sup></div>
+	    			<div class="district">4<sup>ème</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A4"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-5">
 	    		<div class="img-circle">
-	    			<div class="district">V<sup>ème</sup></div>
+	    			<div class="district">5<sup>ème</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A5"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-6">
 	    		<div class="img-circle">
-	    			<div class="district">VI<sup>ème</sup></div>
+	    			<div class="district">6<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A6"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-7">
 	    		<div class="img-circle">
-	    			<div class="district">VII<sup>ème</sup></div>
+	    			<div class="district">7<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A7"></div>
 		    	</div>
 		</div>
 		<div class="item" id="a-8">
 	    		<div class="img-circle">
-	    			<div class="district">VIII<sup>ème</sup></div>
+	    			<div class="district">8<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A8"></div>
 		    	</div>
 		</div>
 	    	<div class="item" id="a-9">
 	    		<div class="img-circle">
-	    			<div class="district">IX<sup>ème</sup></div>
+	    			<div class="district">9<sup>ème</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A9"></div>
 	    		</div>
 		</div>
 	    	<div class="item" id="a-10">
 	    		<div class="img-circle">
-	    			<div class="district">X<sup>ème</sup></div>
+	    			<div class="district">10<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A10"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-11">
 	    		<div class="img-circle">
-	    			<div class="district">XI<sup>ème</sup></div>
+	    			<div class="district">11<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A11"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-12">
 	    		<div class="img-circle">
-	    			<div class="district">XII<sup>ème</sup></div>
+	    			<div class="district">12<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A12"></div>
 		    	</div>
 	    	</div>
@@ -428,37 +439,37 @@
 		</div>
 	    	<div class="item" id="a-15">
 	    		<div class="img-circle">
-	    			<div class="district">XV<sup>ème</sup></div>
+	    			<div class="district">15<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A15"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-16">
 	    		<div class="img-circle">
-	    			<div class="district">XVI<sup>ème</sup></div>
+	    			<div class="district">16<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A16"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-17">
 	    		<div class="img-circle">
-	    			<div class="district">XVII<sup>ème</sup></div>
+	    			<div class="district">17<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A17"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-18">
 	    		<div class="img-circle">
-	    			<div class="district">XVIII<sup>ème</sup></div>
+	    			<div class="district">18<sup>ème</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A18"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-19">
 	    		<div class="img-circle">
-	    			<div class="district">XIX<sup>ème</sup></div>
+	    			<div class="district">19<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A19"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-20">
 	    		<div class="img-circle">
-	    			<div class="district">XX<sup>ème</sup></div>
+	    			<div class="district">20<sup>ème</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A20"></div>
 		    	</div>
 	    	</div>
@@ -532,7 +543,7 @@
 		document.querySelector('#boutonQuestion1').style.background="#AA3939";
 		document.querySelector('#modalite11').style.background="#AA3939";
 
-
+document.getElementById("nom_question").innerHTML = "A quoi ressemble le plus ton régime alimentaire &nbsp;?";
 document.querySelector('#Cartes').style.display='block';
 document.getElementById('A1').innerHTML = 'n°17';
 document.getElementById('A2').innerHTML = 'n°8';
@@ -590,6 +601,7 @@ $('#C20').css('fill', '550000');
 	
 switch (answer) {
 case 1:
+document.getElementById("nom_question").innerHTML = "A quoi ressemble le plus ton régime alimentaire &nbsp;?";
 document.querySelector('#Cartes').style.display='block';
 document.getElementById('A1').innerHTML = 'n° 17';
 document.getElementById('A2').innerHTML = 'n° 8';
@@ -633,6 +645,7 @@ $('#C19').css('fill', '801515');
 $('#C20').css('fill', '550000');
 break;
 case 2:
+document.getElementById("nom_question").innerHTML = "Quel sportif es-tu &nbsp;?";
 document.querySelector('#Cartes').style.display='block';
 document.getElementById('A1').innerHTML = 'n°10';
 document.getElementById('A2').innerHTML = 'n°10';
@@ -676,6 +689,7 @@ $('#C19').css('fill', 'AA3939');
 $('#C20').css('fill', '801515');
 break;
 case 3:
+document.getElementById("nom_question").innerHTML = "A quoi consacres-tu tes après-midis &nbsp;?";
 document.querySelector('#Cartes').style.display='block';
 document.getElementById('A1').innerHTML = 'n°15';
 document.getElementById('A2').innerHTML = 'n°20';
@@ -719,6 +733,7 @@ $('#C19').css('fill', '801515');
 $('#C20').css('fill', '801515');
 break;
 case 4:
+document.getElementById("nom_question").innerHTML = "Où passes-tu tes soirées &nbsp;?";
 document.querySelector('#Cartes').style.display='block';
 document.getElementById('A1').innerHTML = 'n°4';
 document.getElementById('A2').innerHTML = 'n°14';
@@ -762,6 +777,7 @@ $('#C19').css('fill', 'AA3939');
 $('#C20').css('fill', '550000');
 break;
 case 5:
+document.getElementById("nom_question").innerHTML = "Tu ne sors jamais sans &nbsp;?";
 document.querySelector('#Cartes').style.display='block';
 document.getElementById('A1').innerHTML = 'n°17';
 document.getElementById('A2').innerHTML = 'n°11';
@@ -1716,11 +1732,11 @@ break;
 }
 
 
-
-
 			
 		}
-	
+
+
+
 	</script>
 
 
