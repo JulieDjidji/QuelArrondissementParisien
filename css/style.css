@@ -856,7 +856,7 @@ input[type="submit"],
 		
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		
-	background-color: black/*#337ab7*/;
+	background-color: #D1CEC4/*black #337ab7*/;
 		
 	border-radius: 4px;
 		
@@ -1502,7 +1502,7 @@ svg { height: 100%; width: 100%; }
 	width: 50px;
 	height: 50px;
 	text-align: center;
-	background-color: black;
+	background-color: #D1CEC4;
 	transition: all 0.4s ease;
         border: none;
 }
